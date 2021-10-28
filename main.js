@@ -1,7 +1,7 @@
 const LinksSocialMedia = {
   github: 'alissonclinhares',
-  youtube: 'DoisDedosDeTeologia',
-  instagram: '_saravictor',
+  linkedin: 'in/alisson-design',
+  instagram: 'alissonlinharess',
   facebook: 'alissonlinhares',
   twitter: 'alisson_cl'
 }

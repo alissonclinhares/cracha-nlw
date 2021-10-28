@@ -12,7 +12,6 @@ body {
   height: 100%;
   font-family: 'Roboto', sans-serif;
   -webkit-font-smoothing: antialiased;
-  background-color: rgb(61, 61, 61);
 }
 
 body {
@@ -21,10 +20,21 @@ body {
 }
 
 main {
-  background: url(images/background.png);
-  width: 375px;
-  height: 812px;
-  color: var(--grey); /*Chamando a variável*/
+  background: url(images/background.svg) no-repeat center/cover;
+  width: 100vw;
+  min-height: 812px;
+  height: 100vh;
+}
+
+@media (min-width: 960px) {
+  /* estilos versão desktop */
+  main {
+    background: url(images/background_desktop.svg) no-repeat center/cover;
+    width: 100vw;
+    min-height: 812px;
+    height: 100vh;
+    background-color: #343434;
+  }
 }
 
 .container {
@@ -32,6 +42,8 @@ main {
   margin-right: auto;
   margin-left: auto;
   text-align: center;
+
+  color: var(--grey);
 }
 
 .avatar {
